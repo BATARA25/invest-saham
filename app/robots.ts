@@ -1,1 +1,1 @@
-import type{MetadataRoute}from"next";export default function robots():MetadataRoute.Robots{return{rules:{userAgent:"*",allow:"/"},sitemap:"/sitemap.xml"}}
+import type{MetadataRoute}from"next";export default function robots():MetadataRoute.Robots{return{rules:[{userAgent:"*",allow:["/","/markets","/stocks/","/research","/news","/screener","/legal"],disallow:["/dashboard","/watchlist","/portfolio","/admin","/login","/signup","/api/"]}],sitemap:"/sitemap.xml"}}
