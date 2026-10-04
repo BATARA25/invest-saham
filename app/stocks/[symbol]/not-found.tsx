@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <main className="page"><Link href="/markets">← Markets</Link><div className="empty"><h2>Equity not found</h2><p>Symbol tersebut belum tersedia di universe INVEST+.</p><Link className="btn primary" href="/markets">Browse markets</Link></div></main>}
