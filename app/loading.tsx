@@ -1,0 +1,1 @@
+export default function Loading(){return <main className="page"><div className="empty"><p>Loading INVEST+…</p></div></main>}

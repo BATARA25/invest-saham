@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";import{stocks}from"@/lib/market-data";export default function sitemap():MetadataRoute.Sitemap{const base="https://invest-saham.vercel.app";return[{url:base},{url:base+"/markets"},{url:base+"/research"},{url:base+"/watchlist"},{url:base+"/portfolio"},{url:base+"/legal"},...stocks.map(s=>({url:`${base}/stocks/${s.symbol.toLowerCase()}`}))]}
